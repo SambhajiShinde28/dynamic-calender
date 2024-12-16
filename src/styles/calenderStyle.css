@@ -1,6 +1,6 @@
 .calender-container {
     width: 85%;
-    height: 75%;
+    height: auto;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 30px;
@@ -31,7 +31,6 @@
 
 .calender-container .calendar-header button:hover {
     background-color: #ff01011a;
-
 }
 
 .calender-container .calendar-header button:active {
