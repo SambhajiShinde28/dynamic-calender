@@ -1,0 +1,117 @@
+.eventlist-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 0px 50px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 0px 20px 0px;
+}
+
+.filter-container select {
+    padding: 7px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease;
+    color: #FF6C6C;
+    cursor: pointer;
+}
+
+.filter-container select:focus {
+    border: 2px solid #FF6C6C;
+}
+
+.filter-container button {
+    padding: 8px 16px;
+    background-color: #FF6C6C;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-container button:hover {
+    background-color: #ff3939;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .responsive-table thead {
+    background-color: #461F1F;
+  }
+  
+  .responsive-table th,
+  .responsive-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .responsive-table tbody tr:hover {
+    background-color: #282727a5;
+  }
+  
+  .responsive-table th {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fd9c9ca5;
+  }
+
+  .responsive-table td{
+    color: #FFE1BD;
+  }
+  
+  @media (max-width: 600px) {
+    .responsive-table thead {
+      display: none;
+    }
+  
+    .responsive-table tbody tr {
+      display: block;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+    }
+  
+    .responsive-table td {
+      display: block;
+      text-align: right;
+      padding: 10px;
+      position: relative;
+    }
+  
+    .responsive-table td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      text-align: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }

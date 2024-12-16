@@ -1,0 +1,323 @@
+.calender-container {
+    width: 85%;
+    height: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 15px solid #461F1F;
+    border-radius: 5px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #461F1F;
+}
+
+.calender-container .calendar-header button{
+    background-color: #FF6C6C1A;
+    color: #FFE1BD;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+.calender-container .calendar-header button:hover {
+    background-color: #ff01011a;
+
+}
+
+.calender-container .calendar-header button:active {
+    transform: scale(0.98);
+    transform-origin: center;
+}
+
+.calendar-header h2{
+    font-size: 26px;
+    color: #FFE1BD;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.calendar-day-header {
+    font-weight: bold;
+    color: #FFE1BD;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.calendar-day {
+    padding: 10px;
+    border: 1px solid #FFE1BD;
+    text-align: center;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #FFE1BD;
+    cursor: pointer;
+}
+
+.calendar-day.empty {
+    background-color: transparent;
+    border: none;
+}
+
+.calendar-day.highlight {
+    background-color: #FFD700;
+    color: #ffffffe5;
+    font-weight: bold;
+    border: 2px solid #FFD700;
+    border: 1px solid #FFD700;
+    font-size: 50px;
+}
+
+.sunday{
+    background-color: #FF4500;
+    border: 1px solid #FF4500;
+}
+
+.saturday{
+    background-color: #1E90FF;
+    border: 1px solid #1E90FF;
+
+}
+
+
+
+
+
+.dialoguebox-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 90%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.dialoguefield-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    background-color: #1a1a1a;
+    box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.8), inset 10px 10px 15px rgba(255, 255, 255, 0.05);
+    
+}
+
+.cut-icon {
+    font-size: 35px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: rgb(97, 96, 96);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cut-icon:hover {
+    transform: scale(1.05);
+}
+
+.cut-icon:active {
+    transform: scale(0.95);
+}
+
+.dialoguefield-container h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 60px 0px 10px 0px;
+    color: #4a90e2ff;
+}
+
+.editclosebtn-container {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.editclosebtn-container button {
+    margin-left: 10px;
+}
+
+.event-type{
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.event-type label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4a90e2ff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
+
+.event-type select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #4a90e2ff;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    color: #FF6C6C;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.event-type select:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.dialogue-field {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 10px 30px;
+}
+
+.dialogue-field label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4a90e2ff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
+
+
+/* Input Field */
+.dialogue-field input[type="text"],
+.dialogue-field textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    color: #FF6C6C;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dialogue-field input[type="text"]:focus,
+.dialogue-field input[type="time"]:focus,
+.dialogue-field textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.StartEndTime {
+    display: flex;
+    width: 100%;
+}
+
+.start-time,
+.end-time {
+    width: 50%;
+}
+
+.dialogue-field .StartEndTime label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4a90e2ff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
+
+::placeholder{
+    color: #FF6C6C;
+}
+
+.dialogue-field .StartEndTime input[type="time"] {
+    width: 40%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    color: #FF6C6C;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dialogue-field .StartEndTime input[type="time"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Textarea for description */
+.dialogue-field textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Button */
+.dialogue-field button,
+.editclosebtn-container button {
+    background-color: #4a90e2ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.dialogue-field button:hover,
+.editclosebtn-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Button click effect */
+.dialogue-field button:active,
+.editclosebtn-container button:active {
+    transform: scale(0.98);
+}
