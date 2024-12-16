@@ -152,7 +152,7 @@
 }
 
 .editclosebtn-container {
-    padding: 5px 10px;
+    padding: 5px 30px;
     display: flex;
     justify-content: right;
 }
@@ -320,3 +320,137 @@
 .editclosebtn-container button:active {
     transform: scale(0.98);
 }
+
+
+
+
+
+/* media query using */
+@media (max-width:850px) {
+    
+    .dialoguebox-container {
+        height: 75%;
+    }
+    
+    .cut-icon {
+        font-size: 20px;
+    }
+
+    .dialoguefield-container h3 {
+        font-size: 16px;
+        padding: 50px 0px 10px 0px;
+    }
+    
+    .editclosebtn-container button {
+        font-size: 14px;
+    }
+    
+    .event-type label{
+        font-size: 12px;
+    }
+    
+    .event-type select{
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    .dialogue-field label {
+        font-size: 12px;
+    }
+    
+    .dialogue-field input[type="text"],
+    .dialogue-field textarea {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    .dialogue-field .StartEndTime label {
+        font-size: 12px;
+    }
+    
+    .dialogue-field .StartEndTime input[type="time"] {
+        padding: 4px;
+        font-size: 12px;
+    }
+ 
+    .dialogue-field textarea {
+        height: 60px;
+    }
+    
+    .dialogue-field button,
+    .editclosebtn-container button {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width:700px) {
+    .calender-container {
+        width: 95%;
+    }
+    
+    .calender-container .calendar-header button{
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .calendar-header h2{
+        font-size: 18px;
+    }
+    
+    .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+        padding: 5px;
+    }
+    
+    .calendar-day-header {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    .calendar-day {
+        padding: 0px;
+        height: 50px;
+        font-size: 12px;
+    }
+    
+    .calendar-day.highlight {
+        font-size: 25px;
+    }
+
+
+
+    .dialoguebox-container {
+        width: 85%;
+    }
+
+    .dialoguefield-container h3 {
+        font-size: 14px;
+        padding: 50px 0px 20px 0px;
+    }
+    
+    .dialogue-field .StartEndTime input[type="time"] {
+        width: 60%;
+    }
+    
+}
+
+@media (max-width:450px){
+    .calendar-day-header {
+        margin-top: 0px;
+        font-size: 10px;
+    }
+    
+    .calendar-day {
+        height: 40px;
+    }
+
+    .calendar-day.highlight {
+        font-size: 20px;
+    }
+}
+

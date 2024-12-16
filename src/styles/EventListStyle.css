@@ -1,4 +1,4 @@
-.eventlist-container{
+.eventlist-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,64 +54,105 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .responsive-table {
+}
+
+.responsive-table {
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     font-size: 14px;
     text-align: left;
-  }
-  
-  .responsive-table thead {
+}
+
+.responsive-table thead {
     background-color: #461F1F;
-  }
-  
-  .responsive-table th,
-  .responsive-table td {
+}
+
+.responsive-table th,
+.responsive-table td {
     padding: 12px 15px;
     border: 1px solid #ddd;
-  }
-  
-  .responsive-table tbody tr:hover {
+}
+
+.responsive-table tbody tr:hover {
     background-color: #282727a5;
-  }
-  
-  .responsive-table th {
+}
+
+.responsive-table th {
     text-transform: uppercase;
     font-weight: 600;
     color: #fd9c9ca5;
-  }
+}
 
-  .responsive-table td{
+.responsive-table td {
     color: #FFE1BD;
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 900px) {
+    
+    .filter-container {
+        padding: 0px 0px 20px 0px;
+    }
+    
+    .filter-container select {
+        padding: 6px 10px;
+    }
+    
+    .filter-container button {
+        padding: 7px 16px;
+    }
+
+
+    
+    .eventlist-container {
+        padding: 0px 20px;
+    }
+
+    .responsive-table {
+        font-size: 12px;
+    }
+    
     .responsive-table thead {
-      display: none;
+        font-size: 14px;
     }
-  
-    .responsive-table tbody tr {
-      display: block;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-    }
-  
+    
+    .responsive-table th,
     .responsive-table td {
-      display: block;
-      text-align: right;
-      padding: 10px;
-      position: relative;
+        padding: 12px 0px;
+        text-align: center;
     }
-  
-    .responsive-table td:before {
-      content: attr(data-label);
-      position: absolute;
-      left: 10px;
-      text-align: left;
-      font-weight: bold;
-      text-transform: uppercase;
+
+}
+
+@media (max-width: 700px) {
+    
+    .filter-container {
+        gap: 15px;
     }
-  }
+    
+    .filter-container select {
+        font-size: 12px;
+    }
+    
+    .filter-container button {
+        font-size: 12px;
+    }
+
+
+    
+    .responsive-table {
+        font-size: 12px;
+    }
+    
+    .responsive-table thead {
+        font-size: 12px;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        min-width: 100px;
+        padding: 12px 0px;
+        text-align: center;
+    }
+
+}

@@ -232,7 +232,7 @@ const CalenderComponent = () => {
             <div className="dialoguebox-container" ref={dialoguaBoxRef}>
                 <div className="dialoguefield-container">
                     <span onClick={CutIconClicked} className="material-symbols-outlined cut-icon">close</span>
-                    <h3>You are setting event for date : {dialogueBoxDate}</h3>
+                    <h3>Your selected date : {dialogueBoxDate}</h3>
                     <div className="editclosebtn-container">
                         <button type="button" onClick={EditBTNClicked}>Edit</button>
                         <button type="button" onClick={CloseBTNClicked}>Close</button>
